@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./962077-love-wallpapers-images-1242x2208-hd-1080p.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coverBg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.877);
+    position: absolute;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0%;
+        margin-top: 150px;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.introMsg {
+    width: 75%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    animation: slideUp 1s;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+}
+
+.no {
+    flex: 1;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+}
+
+.yes {
+    flex: 1;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0, 128, 53);
+    color: white;
+}
+
+.msg1, .msg2, .msg3, .msg4, .msg5 {
+    width: 75%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    animation: slideUp 1s;
+}
+
+.btnCont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.yesMsg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 128, 53);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.noMsg {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+.yesMsg h1, .noMsg h1 {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideUp 1s;
+}
